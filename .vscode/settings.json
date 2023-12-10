@@ -1,0 +1,7 @@
+{
+  "python.languageServer": "Default",
+  "pylint.args": [
+    "--disable=C0114,C0116,C0103"
+  ]
+
+}
