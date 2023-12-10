@@ -4,7 +4,8 @@ lines = file1.readlines()
 sumber = 0
 for line in lines:
     # nums = re.findall(r'\d+', line)
-    # GAMEPLAN: split string into sequence of chars, and if it's 0-9, take the first two and add them together
+    # GAMEPLAN: split string into sequence of chars, and if it's 0-9,
+    # take the first two and add them together
     seq = list(line)
     num1 = num2 = 0
     for thing in seq:
