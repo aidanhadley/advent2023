@@ -3,9 +3,9 @@ import time
 
 def make_graph(lines):
     graph = []
-    for y, line in enumerate(lines):
+    for line in lines:
         row = []
-        for x, item in enumerate(line):
+        for item in line:
             if item != "\n":
                 row.append(item)
         graph.append(row)
@@ -39,7 +39,7 @@ def expand_graph(graph, n=1):
     for i in range(len(graph) - 1, -1, -1):
         if len(set(graph[i])) == 1:
             rows = []
-            for j in range(n):
+            for _ in range(n):
                 rows.append(row)
             graph[i:i] = rows
     return graph
@@ -69,13 +69,13 @@ def find_coords(graph, n=1):
 def compute(lines, n=1):
     small = make_graph(lines)
     graph = expand_graph(small, n)
-    coords = find_coords(small, n)
-    sum = 0
+    coords = find_coords(graph, n)
+    sumber = 0
     for i in range(len(coords)):
         for j in range(i + 1, len(coords)):
             d = abs(coords[j][0] - coords[i][0]) + abs(coords[j][1] - coords[i][1])
-            sum += d
-    print(f"The sum of all of the shortest distances is {sum}")
+            sumber += d
+    print(f"The sum of all of the shortest distances is {sumber}")
 
 def main():
     file = open("11/input.txt", "r", encoding="utf8")
