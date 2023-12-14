@@ -2,6 +2,9 @@
   "python.languageServer": "Default",
   "pylint.args": [
     "--disable=C0114,C0116,C0103,C0115,C0200"
-  ]
+  ],
+  "files.associations": {
+    "iostream": "cpp"
+  }
 
 }
