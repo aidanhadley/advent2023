@@ -9,21 +9,21 @@ using std::cout;
 using std::endl;
 using std::vector;
 using std::string;
-using namespace aoc2023;
+using namespace aoc2015;
 
 //  decalre prototype
 vector<string> turnFileToString(string fileName);
 
 int main() {
   //  ! modify
-  int day = 1;
+  int day = 2;
   //  ! modify
   //  runs example
   string file = "day" + std::to_string(day) + "e.txt";
   cout << "Running Day " << day << " Example:" << endl;
   vector<string> lines = turnFileToString(file);
   //  ! modify
-  Day1 d(lines);
+  Day2 d(lines);
   //  ! modify
   cout << "Part 1:" << d.run1() << endl;
   cout << "Part 2:" << d.run2() << endl;

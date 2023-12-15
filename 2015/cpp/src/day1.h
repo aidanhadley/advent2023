@@ -12,7 +12,7 @@ using std::endl;
 #ifndef _DAY1_H_
 #define _DAY1_H_
 
-namespace aoc2023 {
+namespace aoc2015 {
 class Day1 {
  public:
   explicit Day1(vector<string> lines) { lines_ = lines; }
@@ -66,5 +66,5 @@ class Day1 {
   vector<string> lines_;
   int result_;
 };
-}   //  namespace aoc2023
+}   //  namespace aoc2015
 #endif  //  end _DAY1_H_
