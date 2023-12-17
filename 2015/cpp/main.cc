@@ -16,14 +16,14 @@ vector<string> turnFileToString(string fileName);
 
 int main() {
   //  ! modify
-  int day = 2;
+  int day = 3;
   //  ! modify
   //  runs example
   string file = "day" + std::to_string(day) + "e.txt";
   cout << "Running Day " << day << " Example:" << endl;
   vector<string> lines = turnFileToString(file);
   //  ! modify
-  Day2 d(lines);
+  Day3 d(lines);
   //  ! modify
   cout << "Part 1:" << d.run1() << endl;
   cout << "Part 2:" << d.run2() << endl;
